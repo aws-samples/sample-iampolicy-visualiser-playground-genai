@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>IAM Policy Generator</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="policyVisualizer.css" />
+</head>
+<body>
+  <h1>IAM Policy Generator</h1>
+
+  <section>
+    <h2>Generate a New IAM Policy</h2>
+    <form id="generateForm">
+      <label for="requirements">Requirements:</label>
+      <textarea id="requirements" rows="5"></textarea>
+      <div class="form-controls">
+        <div class="policy-type-selector">
+          <label for="policyType">Policy Type:</label>
+          <select id="policyType">
+            <option value="IDENTITY_POLICY" selected>Identity Policy</option>
+            <option value="RESOURCE_POLICY">Resource Policy</option>
+            <option value="SERVICE_CONTROL_POLICY">Service Control Policy</option>
+            <option value="RESOURCE_CONTROL_POLICY">Resource Control Policy</option>
+          </select>
+        </div>
+        <button type="submit">Generate Policy</button>
+      </div>
+    </form>
+    
+    <h3>Explanation</h3>
+    <div id="generateExplanation" class="result-block explanation-block"></div>
+    
+    <h3>Simple Policy</h3>
+    <div id="generatePolicy" class="result-block policy-block"></div>
+    
+    <h3>Enhanced Policy</h3>
+    <div id="generateEnhancedPolicy" class="result-block enhanced-policy-block"></div>
+    
+    <h3>Suggestions</h3>
+    <div id="generateSuggestion" class="result-block suggestion-block"></div>
+    
+    <h3>Policy Visualization</h3>
+    <div id="generateVisualization" class="visualization-container"></div>
+    
+    <div class="extraction-controls">
+      <button id="extractGeneratedPolicyBtn" class="extract-btn">Extract Policy from Visualization</button>
+      <span id="generate-clipboard-notification" class="clipboard-notice">✓ Policy copied to clipboard!</span>
+    </div>
+    
+    <h3>Analysis</h3>
+    <div id="analyzeResults" class="result-block analysis-block"></div>
+    
+    <div class="analyze-controls">
+      <button id="analyzeGeneratedPolicyBtn" class="analyze-btn">Analyze Current Policy</button>
+    </div>
+  </section>
+
+  <script src="d3.v7.min.js"></script>
+  <script type="module" src="./assets/iconConfig.js"></script>
+  <script type="module" src="policyVisualizer.js"></script>
+  <script type="module" src="script.js"></script>
+</body>
+</html>

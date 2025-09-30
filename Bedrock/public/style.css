@@ -1,0 +1,197 @@
+body {
+  font-family: Arial, sans-serif;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  color: #232f3e;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+h1 {
+  font-size: 28px;
+}
+
+h2 {
+  font-size: 22px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+button {
+  background-color: #ff9900;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+button:hover {
+  background-color: #e88e00;
+}
+
+button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+/* Form layout */
+#generateForm {
+  margin-bottom: 20px;
+}
+
+.form-controls {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.policy-type-selector {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.policy-type-selector select {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background-color: white;
+  width: 220px;
+}
+
+/* Results layout */
+.result-block {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 25px;
+  border-radius: 4px;
+  white-space: pre-wrap;
+  overflow: auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.explanation-block {
+  border-left: 3px solid #3498db;
+}
+
+.policy-block {
+  border-left: 3px solid #9b59b6;
+}
+
+.enhanced-policy-block {
+  border-left: 3px solid #2ecc71;
+}
+
+.suggestion-block {
+  border-left: 3px solid #ff9900;
+}
+
+.analysis-block {
+  border-left: 3px solid #e74c3c;
+  margin-top: 10px;
+}
+
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  background-color: #f5f5f5;
+  padding: 12px;
+  border-radius: 4px;
+  overflow-x: auto;
+  margin: 0;
+  font-size: 14px;
+}
+
+.visualization-container {
+  height: 500px;
+  border: 1px solid #ddd;
+  background: #f9f9f9;
+  overflow: auto;
+  border-radius: 4px;
+  margin-bottom: 25px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Action buttons */
+.extraction-controls {
+  margin-bottom: 25px;
+}
+
+.analyze-controls {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.extract-btn {
+  background-color: #3498db;
+}
+
+.extract-btn:hover {
+  background-color: #2980b9;
+}
+
+.analyze-btn {
+  background-color: #27ae60;
+}
+
+.analyze-btn:hover {
+  background-color: #219653;
+}
+
+.clipboard-notice {
+  color: green;
+  margin-left: 10px;
+  display: none;
+}
+
+/* D3 visualization styles */
+/* These styles are now in policyVisualizer.css */
+.visualization-container {
+  width: 100%;
+  height: 500px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin: 20px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .form-controls {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .policy-type-selector {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  
+  .policy-type-selector select {
+    width: 100%;
+  }
+}
