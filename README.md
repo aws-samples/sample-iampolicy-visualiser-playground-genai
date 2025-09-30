@@ -183,11 +183,15 @@ If you encounter JSON parsing errors:
 - Ensure there are no invisible characters in the policy
 - Verify that the policy follows AWS Identity and Access Management (IAM) syntax
 
-## Contributors ()
+## Contributors
 Anand Krishna Varanasi
+
 Prabhanshu Ranjan
+
 Abhigyan Dandriyal
+
 Urbija Goswami
+
 Sai Shivani Dondapati
 
 ## Important Note
