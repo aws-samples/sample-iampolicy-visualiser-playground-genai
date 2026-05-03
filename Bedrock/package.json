@@ -8,9 +8,9 @@
         "start": "node server.js"
     },
     "dependencies": {
-        "@aws-sdk/client-accessanalyzer": "3.791.0",
+        "@aws-sdk/client-accessanalyzer": "3.1041.0",
         "@aws-sdk/client-bedrock-agent-runtime": "3.758.0",
-        "@aws-sdk/client-bedrock-runtime": "3.798.0",
+        "@aws-sdk/client-bedrock-runtime": "3.1041.0",
         "@aws-sdk/client-iam": "3.758.0",
         "body-parser": "1.20.3",
         "dotenv": "16.4.7",
